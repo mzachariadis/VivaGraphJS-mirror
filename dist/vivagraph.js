@@ -4721,6 +4721,10 @@ function renderer(graph, settings) {
       animationTimer.stop();
     },
 
+    isPaused: function() {
+      return isPaused;
+    },
+
     resume: function() {
       isPaused = false;
       animationTimer.restart();
@@ -4761,6 +4765,9 @@ function renderer(graph, settings) {
       return graphics;
     },
     
+    /**
+     * Gets current layout.
+     */
     getLayout: function() {
       return layout;
     },
@@ -7312,7 +7319,7 @@ function webglSquare(size, color) {
 
 },{"./parseColor.js":55}],66:[function(require,module,exports){
 // todo: this should be generated at build time.
-module.exports = '0.8.1';
+module.exports = '0.10.1';
 
 },{}]},{},[1])(1)
 });
